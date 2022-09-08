@@ -1,0 +1,12 @@
+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
+
+Setting up token (optional)
+git remote set-url origin https://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@github.com/primusr/cit142f.git
+
+Add files to your local repository
+
+Upload it to your repository by using this commands:
+git add . 
+git commit -m "first upload"
+git push
+
