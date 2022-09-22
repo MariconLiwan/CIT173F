@@ -9,7 +9,7 @@ to print each formula on a different line. **/
  
 for ($x=1; $x<=12; $x++){
   $result = $x * $x;
-  echo "$x * $x = $result <br>";
+  echo "$x * $x = $result \n";
 }
  
 ?>
