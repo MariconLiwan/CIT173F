@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+
+<header> 
+	<title>PHP Array Exercise 1</title>
+</header>
+
+<body>
+
+<h1>PHP Array Excercise 2</h1>
+
+<?php
+
+
+/**
+For this exercise, you will use a list of ten of the largest cities in the world. 
+(Please note, these are not the ten largest, just a selection of ten from the 
+largest cities.) Create an array with the following values: Tokyo, Mexico City, 
+New York City, Mumbai, Seoul, Shanghai, Lagos, Buenos Aires, Cairo, London.
+
+Print these values to the browser separated by commas, using a loop to iterate over the array. 
+
+Sort the array, then print the values to the browser in an unordered list, again using a loop.
+Add the following cities to the array: Los Angeles, Calcutta, Osaka, Beijing. 
+Sort the array again, and print it once more to the browser in an unordered list.
+*/
+
+$city = array("Tokyo", "Mexico City", "New York City", "Mumbai", "Seoul", "Shanghai",
+"Lagos", "Buenos Aires", "Cairo", "London"); 
+
+$length = count($city);
+for ($i = 0; $i < $length; $i++) {
+  print $city[$i] . ", ";
+}
+
+sort($city);
+echo "<ul>";
+foreach ($city as $c) {
+	echo "<li>". $c ."</li>";
+}
+echo "</ul>";
+
+array_push($city, "Los Angeles", "Calcutta", "Osaka", "Beijing");
+sort($city);
+echo "<ul>";
+foreach ($city as $c) {
+	echo "<li>". $c ."</li>";
+	}
+echo "</ul>";	
+		
+
+?> 
+
+</body>
+</html>
